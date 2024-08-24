@@ -3,6 +3,7 @@ import {
     Float,
     Environment,
     useGLTF,
+    ContactShadows,
 } from "@react-three/drei";
 
 export default function Experience() {
@@ -38,6 +39,13 @@ export default function Experience() {
                     <primitive position-y={-1.2} object={computer.scene} />
                 </Float>
             </PresentationControls>
+
+            <ContactShadows
+                position-y={-1.4}
+                opacity={0.4}
+                scale={5}
+                blur={2.4}
+            />
         </>
     );
 }
