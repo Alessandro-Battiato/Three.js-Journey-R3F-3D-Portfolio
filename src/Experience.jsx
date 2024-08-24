@@ -1,4 +1,5 @@
 import {
+    Text,
     Html,
     PresentationControls,
     Float,
@@ -56,6 +57,16 @@ export default function Experience() {
                             <iframe src="https://bruno-simon.com/html/" />
                         </Html>
                     </primitive>
+                    <Text
+                        position={[2, 0.75, 0.8]}
+                        rotation-y={-1.25}
+                        maxWidth={2}
+                        textAlign="center"
+                        font="./bangers-v20-latin-regular.woff"
+                        fontSize={1}
+                    >
+                        ALESSANDRO BATTIATO
+                    </Text>
                 </Float>
             </PresentationControls>
 
