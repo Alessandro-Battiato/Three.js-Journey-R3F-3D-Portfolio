@@ -17,3 +17,11 @@ body,
 .r3f {
     touch-action: none;
 }
+
+.htmlScreen iframe {
+    width: 1024px;
+    height: 670px;
+    border: none;
+    border-radius: 20px; /*Preference of Bruno Simon because this might look better on Macs*/
+    background-color: black;
+}
