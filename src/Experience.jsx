@@ -1,4 +1,4 @@
-import { OrbitControls, useGLTF } from "@react-three/drei";
+import { Environment, OrbitControls, useGLTF } from "@react-three/drei";
 
 export default function Experience() {
     // CC0 licensed free model by pmndrs market
@@ -8,14 +8,12 @@ export default function Experience() {
 
     return (
         <>
+            {/*The preset already gives the necessary light to the computer model, and also gives the buildings reflections on the screen when turned off*/}
+            <Environment preset="city" />
+
             <color attach="background" args={["#241a1a"]} />
 
             <OrbitControls makeDefault />
-
-            <mesh>
-                <boxGeometry />
-                <meshNormalMaterial />
-            </mesh>
 
             <primitive object={computer.scene} />
         </>
