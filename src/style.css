@@ -1,11 +1,19 @@
 html,
 body,
-#root
-{
+#root {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: ivory;
+}
+
+/*
+    The following attribute is necessary as to avoid the mobile issue when trying to drag and drop the model
+    and overall trying to use the 3D website because mobile gestures might trigger the page reload, or the go-back action
+    and would make a horrible experience, this property fixes the issue
+*/
+.r3f {
+    touch-action: none;
 }
