@@ -1,4 +1,4 @@
-import { Environment, OrbitControls, useGLTF } from "@react-three/drei";
+import { Float, Environment, OrbitControls, useGLTF } from "@react-three/drei";
 
 export default function Experience() {
     // CC0 licensed free model by pmndrs market
@@ -15,7 +15,9 @@ export default function Experience() {
 
             <OrbitControls makeDefault />
 
-            <primitive object={computer.scene} />
+            <Float rotationIntensity={0.4}>
+                <primitive position-y={-1.2} object={computer.scene} />
+            </Float>
         </>
     );
 }
