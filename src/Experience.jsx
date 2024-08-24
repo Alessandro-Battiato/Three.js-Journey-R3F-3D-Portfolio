@@ -26,7 +26,12 @@ export default function Experience() {
                 The global attribute makes the user able to drag and drop the model from anywhere, even from outside the model "scope"
                 it makes sense to be able to do this since the model will be the main component of our page
             */}
-            <PresentationControls global>
+            <PresentationControls
+                global
+                rotation={[0.13, 0.1, 0]}
+                polar={[-0.4, 0.2]} // vertical drag and drop
+                azimuth={[-1, 0.75]} // horizontal drag and drop
+            >
                 <Float rotationIntensity={0.4}>
                     <primitive position-y={-1.2} object={computer.scene} />
                 </Float>
