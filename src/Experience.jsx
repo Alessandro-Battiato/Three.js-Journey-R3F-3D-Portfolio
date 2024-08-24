@@ -31,6 +31,8 @@ export default function Experience() {
                 rotation={[0.13, 0.1, 0]}
                 polar={[-0.4, 0.2]} // vertical drag and drop
                 azimuth={[-1, 0.75]} // horizontal drag and drop
+                config={{ mass: 2, tension: 400 }} // this changes what happens while you HOLD the drag and drop action, the parameters you gave makes the animation feel "elastic" while you move the model around
+                snap={{ mass: 4, tension: 400 }} // this makes the model go back to it's original position
             >
                 <Float rotationIntensity={0.4}>
                     <primitive position-y={-1.2} object={computer.scene} />
